@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Tor Vergata student helper",
+  "version": "1.0",
+  "description": "A simple extension developed by SKEGGIA_27 to help students do some things...",
+  "permissions": [
+    "declarativeNetRequest",
+    "tabs",
+    "activeTab",
+    "notifications",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "images/16x16.png",
+    "48": "images/48x48.png",
+    "128": "images/128x128.png"
+  }
+}
+
+

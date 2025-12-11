@@ -1,0 +1,1529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link
+      rel="stylesheet"
+      href="/valutazione.didattica/static/styles/valutazionedidattica.css"
+      type="text/css"
+    />
+
+    <!-- <title>Uniroma2 - Valutazione Didattica</title> -->
+    <title>Uniroma2 - Valutazione Didattica</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="banner">
+        <form
+          id="command"
+          action="/valutazione.didattica/main/warningModuliPage"
+          method="POST"
+        >
+          <span style="float: right">
+            <input
+              type="submit"
+              name="lang"
+              class="button_language it"
+              value="it"
+              title="Italiano"
+              alt="Italiano"
+            />
+            <input
+              type="submit"
+              name="lang"
+              class="button_language en"
+              value="en"
+              title="English"
+              alt="English"
+            />
+            <br />
+          </span>
+        </form>
+      </div>
+
+      <div id="main">
+        <h1>DATI DIDATTICA</h1>
+
+        <ul style="list-style-type: none">
+          <li>Anno accademico: 2023/2024</li>
+
+          <li>Corso di Studi: H02 - INFORMATICA</li>
+
+          <li>Insegnamento: 8065624 - RICERCA OPERATIVA</li>
+
+          <li>Docente: CARAMIA MASSIMILIANO</li>
+        </ul>
+
+        <form
+          id="questionarioForm"
+          action="validateQuestionarioGenerico"
+          method="POST"
+        >
+          <ol>
+            <i></i>
+            <br />
+            <br />
+
+            <li>
+              <b> - Fruizione Didattica a Distanza</b>
+              <br />
+              <br />
+
+              <fieldset>
+                <ol>
+                  <li>
+                    <b
+                      >Nell'alloggio in cui hai abitato hai avuto a disposizione
+                      uno spazio nel quale potere svolgere eventuali attivita'
+                      di studio a distanza (lezioni, colloqui con docenti,
+                      ...)?</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni0.domande0.risposta1"
+                        name="sezioni[0].domande[0].risposta"
+                        type="radio"
+                        value="Si, ho avuto a disposizione uno spazio privato"
+                      /><label for="sezioni0.domande0.risposta1"
+                        >Si, ho avuto a disposizione uno spazio privato</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni0.domande0.risposta2"
+                        name="sezioni[0].domande[0].risposta"
+                        type="radio"
+                        value="Si, ho avuto a disposizione uno spazio condiviso con orari a rotazione"
+                      /><label for="sezioni0.domande0.risposta2"
+                        >Si, ho avuto a disposizione uno spazio condiviso con
+                        orari a rotazione</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni0.domande0.risposta3"
+                        name="sezioni[0].domande[0].risposta"
+                        type="radio"
+                        value="Si, ho avuto a disposizione uno spazio condiviso e con sovrapposizione di orari"
+                      /><label for="sezioni0.domande0.risposta3"
+                        >Si, ho avuto a disposizione uno spazio condiviso e con
+                        sovrapposizione di orari</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni0.domande0.risposta4"
+                        name="sezioni[0].domande[0].risposta"
+                        type="radio"
+                        value="No, non ho avuto a disposizione uno spazio specifico"
+                      /><label for="sezioni0.domande0.risposta4"
+                        >No, non ho avuto a disposizione uno spazio
+                        specifico</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+
+                  <li>
+                    <b
+                      >Con quale modalità di utilizzo hai avuto a disposizione
+                      in casa un PC/tablet?</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni0.domande1.risposta1"
+                        name="sezioni[0].domande[1].risposta"
+                        type="radio"
+                        value="Ad uso esclusivamente personale"
+                      /><label for="sezioni0.domande1.risposta1"
+                        >Ad uso esclusivamente personale</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni0.domande1.risposta2"
+                        name="sezioni[0].domande[1].risposta"
+                        type="radio"
+                        value="Ad uso condiviso, con orari a rotazione"
+                      /><label for="sezioni0.domande1.risposta2"
+                        >Ad uso condiviso, con orari a rotazione</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni0.domande1.risposta3"
+                        name="sezioni[0].domande[1].risposta"
+                        type="radio"
+                        value="Ad uso condiviso, con sovrapposizione di orari"
+                      /><label for="sezioni0.domande1.risposta3"
+                        >Ad uso condiviso, con sovrapposizione di orari</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni0.domande1.risposta4"
+                        name="sezioni[0].domande[1].risposta"
+                        type="radio"
+                        value="Non ho avuto a disposizione in casa alcuno strumento"
+                      /><label for="sezioni0.domande1.risposta4"
+                        >Non ho avuto a disposizione in casa alcuno
+                        strumento</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+
+                  <li>
+                    <b
+                      >Le apparecchiature (computer, tablet, telefonino) e la
+                      connessione internet a tua disposizione ti hanno permesso
+                      di fruire in modo soddisfacente (audio, video,
+                      interattivita') delle attivita' dell'insegnamento erogate
+                      a distanza?</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni0.domande2.risposta1"
+                        name="sezioni[0].domande[2].risposta"
+                        type="radio"
+                        value="Decisamente SI"
+                      /><label for="sezioni0.domande2.risposta1"
+                        >Decisamente SI</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni0.domande2.risposta2"
+                        name="sezioni[0].domande[2].risposta"
+                        type="radio"
+                        value="Piu' SI che no"
+                      /><label for="sezioni0.domande2.risposta2"
+                        >Piu' SI che no</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni0.domande2.risposta3"
+                        name="sezioni[0].domande[2].risposta"
+                        type="radio"
+                        value="Piu' NO che si"
+                      /><label for="sezioni0.domande2.risposta3"
+                        >Piu' NO che si</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni0.domande2.risposta4"
+                        name="sezioni[0].domande[2].risposta"
+                        type="radio"
+                        value="Decisamente NO"
+                      /><label for="sezioni0.domande2.risposta4"
+                        >Decisamente NO</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+
+                  <li>
+                    <b
+                      >Sei complessivamente soddisfatto di come si e' svolta la
+                      didattica online o in modalita' blended per questo
+                      insegnamento?</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni0.domande3.risposta1"
+                        name="sezioni[0].domande[3].risposta"
+                        type="radio"
+                        value="Decisamente SI"
+                      /><label for="sezioni0.domande3.risposta1"
+                        >Decisamente SI</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni0.domande3.risposta2"
+                        name="sezioni[0].domande[3].risposta"
+                        type="radio"
+                        value="Piu' SI che no"
+                      /><label for="sezioni0.domande3.risposta2"
+                        >Piu' SI che no</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni0.domande3.risposta3"
+                        name="sezioni[0].domande[3].risposta"
+                        type="radio"
+                        value="Piu' NO che si"
+                      /><label for="sezioni0.domande3.risposta3"
+                        >Piu' NO che si</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni0.domande3.risposta4"
+                        name="sezioni[0].domande[3].risposta"
+                        type="radio"
+                        value="Decisamente NO"
+                      /><label for="sezioni0.domande3.risposta4"
+                        >Decisamente NO</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+                </ol>
+              </fieldset>
+            </li>
+
+            <br />
+            <br />
+
+            <i></i>
+            <br />
+            <br />
+
+            <li>
+              <b> - Organizzazione del Corso di Studi</b>
+              <br />
+              <br />
+
+              <fieldset>
+                <ol>
+                  <li>
+                    <b
+                      >L'esame relativo all'insegnamento che sta per valutare,
+                      lo sostiene</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni1.domande0.risposta1"
+                        name="sezioni[1].domande[0].risposta"
+                        type="radio"
+                        value="Nella prima sessione utile dopo la frequenza"
+                      /><label for="sezioni1.domande0.risposta1"
+                        >Nella prima sessione utile dopo la frequenza</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni1.domande0.risposta2"
+                        name="sezioni[1].domande[0].risposta"
+                        type="radio"
+                        value="Nella seconda sessione utile dopo la frequenza, stesso a.a."
+                      /><label for="sezioni1.domande0.risposta2"
+                        >Nella seconda sessione utile dopo la frequenza, stesso
+                        a.a.</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni1.domande0.risposta3"
+                        name="sezioni[1].domande[0].risposta"
+                        type="radio"
+                        value="Nella terza sessione utile dopo la frequenza, stesso a.a."
+                      /><label for="sezioni1.domande0.risposta3"
+                        >Nella terza sessione utile dopo la frequenza, stesso
+                        a.a.</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni1.domande0.risposta4"
+                        name="sezioni[1].domande[0].risposta"
+                        type="radio"
+                        value="In diverso a.a."
+                      /><label for="sezioni1.domande0.risposta4"
+                        >In diverso a.a.</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+
+                  <li>
+                    <b
+                      >Il carico di studio complessivo degli insegnamenti
+                      ufficialmente previsti nel periodo di riferimento è
+                      accettabile ?</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni1.domande1.risposta1"
+                        name="sezioni[1].domande[1].risposta"
+                        type="radio"
+                        value="Decisamente SI"
+                      /><label for="sezioni1.domande1.risposta1"
+                        >Decisamente SI</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni1.domande1.risposta2"
+                        name="sezioni[1].domande[1].risposta"
+                        type="radio"
+                        value="Piu' SI che no"
+                      /><label for="sezioni1.domande1.risposta2"
+                        >Piu' SI che no</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni1.domande1.risposta3"
+                        name="sezioni[1].domande[1].risposta"
+                        type="radio"
+                        value="Piu' NO che si"
+                      /><label for="sezioni1.domande1.risposta3"
+                        >Piu' NO che si</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni1.domande1.risposta4"
+                        name="sezioni[1].domande[1].risposta"
+                        type="radio"
+                        value="Decisamente NO"
+                      /><label for="sezioni1.domande1.risposta4"
+                        >Decisamente NO</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+
+                  <li>
+                    <b
+                      >L'organizzazione complessiva degli insegnamenti
+                      ufficialmente previsti nel periodo di riferimento è
+                      accettabile ?</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni1.domande2.risposta1"
+                        name="sezioni[1].domande[2].risposta"
+                        type="radio"
+                        value="Decisamente SI"
+                      /><label for="sezioni1.domande2.risposta1"
+                        >Decisamente SI</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni1.domande2.risposta2"
+                        name="sezioni[1].domande[2].risposta"
+                        type="radio"
+                        value="Piu' SI che no"
+                      /><label for="sezioni1.domande2.risposta2"
+                        >Piu' SI che no</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni1.domande2.risposta3"
+                        name="sezioni[1].domande[2].risposta"
+                        type="radio"
+                        value="Piu' NO che si"
+                      /><label for="sezioni1.domande2.risposta3"
+                        >Piu' NO che si</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni1.domande2.risposta4"
+                        name="sezioni[1].domande[2].risposta"
+                        type="radio"
+                        value="Decisamente NO"
+                      /><label for="sezioni1.domande2.risposta4"
+                        >Decisamente NO</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+
+                  <li>
+                    <b
+                      >L'organizzazione degli esami (date appelli, modalità di
+                      esame, ecc.) nel periodo di riferimento è accettabile?</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni1.domande3.risposta1"
+                        name="sezioni[1].domande[3].risposta"
+                        type="radio"
+                        value="Decisamente SI"
+                      /><label for="sezioni1.domande3.risposta1"
+                        >Decisamente SI</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni1.domande3.risposta2"
+                        name="sezioni[1].domande[3].risposta"
+                        type="radio"
+                        value="Piu' SI che no"
+                      /><label for="sezioni1.domande3.risposta2"
+                        >Piu' SI che no</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni1.domande3.risposta3"
+                        name="sezioni[1].domande[3].risposta"
+                        type="radio"
+                        value="Piu' NO che si"
+                      /><label for="sezioni1.domande3.risposta3"
+                        >Piu' NO che si</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni1.domande3.risposta4"
+                        name="sezioni[1].domande[3].risposta"
+                        type="radio"
+                        value="Decisamente NO"
+                      /><label for="sezioni1.domande3.risposta4"
+                        >Decisamente NO</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+                </ol>
+              </fieldset>
+            </li>
+
+            <br />
+            <br />
+
+            <i
+              >Ove l'insegnamento prevede moduli, essi saranno sottoposti a
+              valutazione, successivamente alla valutazione dell'insegnamento
+              che lei sta' effettuando</i
+            >
+            <br />
+            <br />
+
+            <li>
+              <b> - Organizzazione dell'insegnamento</b>
+              <br />
+              <br />
+
+              <fieldset>
+                <ol>
+                  <li>
+                    <b
+                      >Le modalità d'esame sono state definite in modo chiaro
+                      ?</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni2.domande0.risposta1"
+                        name="sezioni[2].domande[0].risposta"
+                        type="radio"
+                        value="Decisamente SI"
+                      /><label for="sezioni2.domande0.risposta1"
+                        >Decisamente SI</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni2.domande0.risposta2"
+                        name="sezioni[2].domande[0].risposta"
+                        type="radio"
+                        value="Piu' SI che no"
+                      /><label for="sezioni2.domande0.risposta2"
+                        >Piu' SI che no</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni2.domande0.risposta3"
+                        name="sezioni[2].domande[0].risposta"
+                        type="radio"
+                        value="Piu' NO che si"
+                      /><label for="sezioni2.domande0.risposta3"
+                        >Piu' NO che si</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni2.domande0.risposta4"
+                        name="sezioni[2].domande[0].risposta"
+                        type="radio"
+                        value="Decisamente NO"
+                      /><label for="sezioni2.domande0.risposta4"
+                        >Decisamente NO</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+
+                  <li>
+                    <b
+                      >Gli orari di svolgimento delle lezioni sono stati
+                      rispettati ?</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni2.domande1.risposta1"
+                        name="sezioni[2].domande[1].risposta"
+                        type="radio"
+                        value="Decisamente SI"
+                      /><label for="sezioni2.domande1.risposta1"
+                        >Decisamente SI</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni2.domande1.risposta2"
+                        name="sezioni[2].domande[1].risposta"
+                        type="radio"
+                        value="Piu' SI che no"
+                      /><label for="sezioni2.domande1.risposta2"
+                        >Piu' SI che no</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni2.domande1.risposta3"
+                        name="sezioni[2].domande[1].risposta"
+                        type="radio"
+                        value="Piu' NO che si"
+                      /><label for="sezioni2.domande1.risposta3"
+                        >Piu' NO che si</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni2.domande1.risposta4"
+                        name="sezioni[2].domande[1].risposta"
+                        type="radio"
+                        value="Decisamente NO"
+                      /><label for="sezioni2.domande1.risposta4"
+                        >Decisamente NO</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+
+                  <li>
+                    <b
+                      >Il docente e' stato (i docenti sono stati) effettivamente
+                      reperibile/i per chiarimenti e spiegazioni ?</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni2.domande2.risposta1"
+                        name="sezioni[2].domande[2].risposta"
+                        type="radio"
+                        value="Decisamente SI"
+                      /><label for="sezioni2.domande2.risposta1"
+                        >Decisamente SI</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni2.domande2.risposta2"
+                        name="sezioni[2].domande[2].risposta"
+                        type="radio"
+                        value="Piu' SI che no"
+                      /><label for="sezioni2.domande2.risposta2"
+                        >Piu' SI che no</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni2.domande2.risposta3"
+                        name="sezioni[2].domande[2].risposta"
+                        type="radio"
+                        value="Piu' NO che si"
+                      /><label for="sezioni2.domande2.risposta3"
+                        >Piu' NO che si</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni2.domande2.risposta4"
+                        name="sezioni[2].domande[2].risposta"
+                        type="radio"
+                        value="Decisamente NO"
+                      /><label for="sezioni2.domande2.risposta4"
+                        >Decisamente NO</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+
+                  <li>
+                    <b
+                      >Il docente (i docenti hanno) ha personalmente tenuto le
+                      lezioni ?</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni2.domande3.risposta1"
+                        name="sezioni[2].domande[3].risposta"
+                        type="radio"
+                        value="Quasi mai, saltuariamente (da 0 a 25%)"
+                      /><label for="sezioni2.domande3.risposta1"
+                        >Quasi mai, saltuariamente (da 0 a 25%)</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni2.domande3.risposta2"
+                        name="sezioni[2].domande[3].risposta"
+                        type="radio"
+                        value="Una piccola parte (da 25 a 50%)"
+                      /><label for="sezioni2.domande3.risposta2"
+                        >Una piccola parte (da 25 a 50%)</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni2.domande3.risposta3"
+                        name="sezioni[2].domande[3].risposta"
+                        type="radio"
+                        value="Una buona parte (da 50 a 75%)"
+                      /><label for="sezioni2.domande3.risposta3"
+                        >Una buona parte (da 50 a 75%)</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni2.domande3.risposta4"
+                        name="sezioni[2].domande[3].risposta"
+                        type="radio"
+                        value="Tutte o quasi tutte (da 75 a 100%)"
+                      /><label for="sezioni2.domande3.risposta4"
+                        >Tutte o quasi tutte (da 75 a 100%)</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+                </ol>
+              </fieldset>
+            </li>
+
+            <br />
+            <br />
+
+            <i></i>
+            <br />
+            <br />
+
+            <li>
+              <b> - Attivita' didattiche e studio</b>
+              <br />
+              <br />
+
+              <fieldset>
+                <ol>
+                  <li>
+                    <b
+                      >Le conoscenze preliminari da lei possedute sono risultate
+                      sufficienti per la comprensione degli argomenti trattati
+                      ?</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni3.domande0.risposta1"
+                        name="sezioni[3].domande[0].risposta"
+                        type="radio"
+                        value="Decisamente SI"
+                      /><label for="sezioni3.domande0.risposta1"
+                        >Decisamente SI</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni3.domande0.risposta2"
+                        name="sezioni[3].domande[0].risposta"
+                        type="radio"
+                        value="Piu' SI che no"
+                      /><label for="sezioni3.domande0.risposta2"
+                        >Piu' SI che no</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni3.domande0.risposta3"
+                        name="sezioni[3].domande[0].risposta"
+                        type="radio"
+                        value="Piu' NO che si"
+                      /><label for="sezioni3.domande0.risposta3"
+                        >Piu' NO che si</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni3.domande0.risposta4"
+                        name="sezioni[3].domande[0].risposta"
+                        type="radio"
+                        value="Decisamente NO"
+                      /><label for="sezioni3.domande0.risposta4"
+                        >Decisamente NO</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+
+                  <li>
+                    <b
+                      >Il docente stimola/motiva (i docenti stimolano/motivano)
+                      l'interesse verso la disciplina esponendo gli argomenti in
+                      modo chiaro ?</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni3.domande1.risposta1"
+                        name="sezioni[3].domande[1].risposta"
+                        type="radio"
+                        value="Decisamente SI"
+                      /><label for="sezioni3.domande1.risposta1"
+                        >Decisamente SI</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni3.domande1.risposta2"
+                        name="sezioni[3].domande[1].risposta"
+                        type="radio"
+                        value="Piu' SI che no"
+                      /><label for="sezioni3.domande1.risposta2"
+                        >Piu' SI che no</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni3.domande1.risposta3"
+                        name="sezioni[3].domande[1].risposta"
+                        type="radio"
+                        value="Piu' NO che si"
+                      /><label for="sezioni3.domande1.risposta3"
+                        >Piu' NO che si</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni3.domande1.risposta4"
+                        name="sezioni[3].domande[1].risposta"
+                        type="radio"
+                        value="Decisamente NO"
+                      /><label for="sezioni3.domande1.risposta4"
+                        >Decisamente NO</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+
+                  <li>
+                    <b
+                      >Il carico di studio richiesto da questo insegnamento è
+                      proporzionato rispetto ai crediti assegnati ?</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni3.domande2.risposta1"
+                        name="sezioni[3].domande[2].risposta"
+                        type="radio"
+                        value="Decisamente SI"
+                      /><label for="sezioni3.domande2.risposta1"
+                        >Decisamente SI</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni3.domande2.risposta2"
+                        name="sezioni[3].domande[2].risposta"
+                        type="radio"
+                        value="Piu' SI che no"
+                      /><label for="sezioni3.domande2.risposta2"
+                        >Piu' SI che no</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni3.domande2.risposta3"
+                        name="sezioni[3].domande[2].risposta"
+                        type="radio"
+                        value="Piu' NO che si"
+                      /><label for="sezioni3.domande2.risposta3"
+                        >Piu' NO che si</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni3.domande2.risposta4"
+                        name="sezioni[3].domande[2].risposta"
+                        type="radio"
+                        value="Decisamente NO"
+                      /><label for="sezioni3.domande2.risposta4"
+                        >Decisamente NO</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+
+                  <li>
+                    <b
+                      >Il materiale didattico (indicato e/o fornito) è adeguato
+                      per lo studio di questo insegnamento ?</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni3.domande3.risposta1"
+                        name="sezioni[3].domande[3].risposta"
+                        type="radio"
+                        value="Decisamente SI"
+                      /><label for="sezioni3.domande3.risposta1"
+                        >Decisamente SI</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni3.domande3.risposta2"
+                        name="sezioni[3].domande[3].risposta"
+                        type="radio"
+                        value="Piu' SI che no"
+                      /><label for="sezioni3.domande3.risposta2"
+                        >Piu' SI che no</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni3.domande3.risposta3"
+                        name="sezioni[3].domande[3].risposta"
+                        type="radio"
+                        value="Piu' NO che si"
+                      /><label for="sezioni3.domande3.risposta3"
+                        >Piu' NO che si</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni3.domande3.risposta4"
+                        name="sezioni[3].domande[3].risposta"
+                        type="radio"
+                        value="Decisamente NO"
+                      /><label for="sezioni3.domande3.risposta4"
+                        >Decisamente NO</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+
+                  <li>
+                    <b
+                      >Le attività didattiche integrative (esercitazioni,
+                      laboratori, seminari, ecc.) sono utili ai fini
+                      dell'apprendimento? (se non sono previste attività
+                      integrative, rispondere NON PREVISTE)</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni3.domande4.risposta1"
+                        name="sezioni[3].domande[4].risposta"
+                        type="radio"
+                        value="Decisamente SI"
+                      /><label for="sezioni3.domande4.risposta1"
+                        >Decisamente SI</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni3.domande4.risposta2"
+                        name="sezioni[3].domande[4].risposta"
+                        type="radio"
+                        value="Piu' SI che no"
+                      /><label for="sezioni3.domande4.risposta2"
+                        >Piu' SI che no</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni3.domande4.risposta3"
+                        name="sezioni[3].domande[4].risposta"
+                        type="radio"
+                        value="Piu' NO che si"
+                      /><label for="sezioni3.domande4.risposta3"
+                        >Piu' NO che si</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni3.domande4.risposta4"
+                        name="sezioni[3].domande[4].risposta"
+                        type="radio"
+                        value="Decisamente NO"
+                      /><label for="sezioni3.domande4.risposta4"
+                        >Decisamente NO</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni3.domande4.risposta5"
+                        name="sezioni[3].domande[4].risposta"
+                        type="radio"
+                        value="NON PREVISTE"
+                      /><label for="sezioni3.domande4.risposta5"
+                        >NON PREVISTE</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+                </ol>
+              </fieldset>
+            </li>
+
+            <br />
+            <br />
+
+            <i></i>
+            <br />
+            <br />
+
+            <li>
+              <b> - Infrastrutture</b>
+              <br />
+              <br />
+
+              <fieldset>
+                <ol>
+                  <li>
+                    <b
+                      >Le aule in cui si svolgono le lezioni sono adeguate ? (si
+                      vede, si sente, si trova posto)</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni4.domande0.risposta1"
+                        name="sezioni[4].domande[0].risposta"
+                        type="radio"
+                        value="Decisamente SI"
+                      /><label for="sezioni4.domande0.risposta1"
+                        >Decisamente SI</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni4.domande0.risposta2"
+                        name="sezioni[4].domande[0].risposta"
+                        type="radio"
+                        value="Piu' SI che no"
+                      /><label for="sezioni4.domande0.risposta2"
+                        >Piu' SI che no</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni4.domande0.risposta3"
+                        name="sezioni[4].domande[0].risposta"
+                        type="radio"
+                        value="Piu' NO che si"
+                      /><label for="sezioni4.domande0.risposta3"
+                        >Piu' NO che si</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni4.domande0.risposta4"
+                        name="sezioni[4].domande[0].risposta"
+                        type="radio"
+                        value="Decisamente NO"
+                      /><label for="sezioni4.domande0.risposta4"
+                        >Decisamente NO</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+
+                  <li>
+                    <b
+                      >I locali e le attrezzature per le attività didattiche
+                      integrative (esercitazioni, laboratori, seminari, ecc.)
+                      sono adeguati? (se non sono previste, rispondere NON
+                      PREVISTE)</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni4.domande1.risposta1"
+                        name="sezioni[4].domande[1].risposta"
+                        type="radio"
+                        value="Decisamente SI"
+                      /><label for="sezioni4.domande1.risposta1"
+                        >Decisamente SI</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni4.domande1.risposta2"
+                        name="sezioni[4].domande[1].risposta"
+                        type="radio"
+                        value="Piu' SI che no"
+                      /><label for="sezioni4.domande1.risposta2"
+                        >Piu' SI che no</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni4.domande1.risposta3"
+                        name="sezioni[4].domande[1].risposta"
+                        type="radio"
+                        value="Piu' NO che si"
+                      /><label for="sezioni4.domande1.risposta3"
+                        >Piu' NO che si</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni4.domande1.risposta4"
+                        name="sezioni[4].domande[1].risposta"
+                        type="radio"
+                        value="Decisamente NO"
+                      /><label for="sezioni4.domande1.risposta4"
+                        >Decisamente NO</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni4.domande1.risposta5"
+                        name="sezioni[4].domande[1].risposta"
+                        type="radio"
+                        value="NON PREVISTE"
+                      /><label for="sezioni4.domande1.risposta5"
+                        >NON PREVISTE</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+                </ol>
+              </fieldset>
+            </li>
+
+            <br />
+            <br />
+
+            <i></i>
+            <br />
+            <br />
+
+            <li>
+              <b> - Interesse e soddisfazione</b>
+              <br />
+              <br />
+
+              <fieldset>
+                <ol>
+                  <li>
+                    <b
+                      >Lei è interessato agli argomenti di questo insegnamento ?
+                      (indipendentemente da come è stato svolto)</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni5.domande0.risposta1"
+                        name="sezioni[5].domande[0].risposta"
+                        type="radio"
+                        value="Decisamente SI"
+                      /><label for="sezioni5.domande0.risposta1"
+                        >Decisamente SI</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni5.domande0.risposta2"
+                        name="sezioni[5].domande[0].risposta"
+                        type="radio"
+                        value="Piu' SI che no"
+                      /><label for="sezioni5.domande0.risposta2"
+                        >Piu' SI che no</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni5.domande0.risposta3"
+                        name="sezioni[5].domande[0].risposta"
+                        type="radio"
+                        value="Piu' NO che si"
+                      /><label for="sezioni5.domande0.risposta3"
+                        >Piu' NO che si</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni5.domande0.risposta4"
+                        name="sezioni[5].domande[0].risposta"
+                        type="radio"
+                        value="Decisamente NO"
+                      /><label for="sezioni5.domande0.risposta4"
+                        >Decisamente NO</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+
+                  <li>
+                    <b
+                      >Lei è complessivamente soddisfatto di come è stato svolto
+                      questo insegnamento ?</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni5.domande1.risposta1"
+                        name="sezioni[5].domande[1].risposta"
+                        type="radio"
+                        value="Decisamente SI"
+                      /><label for="sezioni5.domande1.risposta1"
+                        >Decisamente SI</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni5.domande1.risposta2"
+                        name="sezioni[5].domande[1].risposta"
+                        type="radio"
+                        value="Piu' SI che no"
+                      /><label for="sezioni5.domande1.risposta2"
+                        >Piu' SI che no</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni5.domande1.risposta3"
+                        name="sezioni[5].domande[1].risposta"
+                        type="radio"
+                        value="Piu' NO che si"
+                      /><label for="sezioni5.domande1.risposta3"
+                        >Piu' NO che si</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni5.domande1.risposta4"
+                        name="sezioni[5].domande[1].risposta"
+                        type="radio"
+                        value="Decisamente NO"
+                      /><label for="sezioni5.domande1.risposta4"
+                        >Decisamente NO</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+                </ol>
+              </fieldset>
+            </li>
+
+            <br />
+            <br />
+
+            <i></i>
+            <br />
+            <br />
+
+            <li>
+              <b> - Attivita' di studio e commenti</b>
+              <br />
+              <br />
+
+              <fieldset>
+                <ol>
+                  <li>
+                    <b
+                      >La frequenza alle lezioni è accompagnata da regolare
+                      attività di studio ?</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <input
+                        id="sezioni6.domande0.risposta1"
+                        name="sezioni[6].domande[0].risposta"
+                        type="radio"
+                        value="Decisamente SI (costantemente)"
+                      /><label for="sezioni6.domande0.risposta1"
+                        >Decisamente SI (costantemente)</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni6.domande0.risposta2"
+                        name="sezioni[6].domande[0].risposta"
+                        type="radio"
+                        value="Piu' SI che no (in modo saltuario)"
+                      /><label for="sezioni6.domande0.risposta2"
+                        >Piu' SI che no (in modo saltuario)</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni6.domande0.risposta3"
+                        name="sezioni[6].domande[0].risposta"
+                        type="radio"
+                        value="Piu' NO che si (in modo irregolare)"
+                      /><label for="sezioni6.domande0.risposta3"
+                        >Piu' NO che si (in modo irregolare)</label
+                      ><br /><br />
+
+                      <input
+                        id="sezioni6.domande0.risposta4"
+                        name="sezioni[6].domande[0].risposta"
+                        type="radio"
+                        value="Decisamente NO"
+                      /><label for="sezioni6.domande0.risposta4"
+                        >Decisamente NO</label
+                      ><br /><br />
+
+                      <!-- Risposta libera -->
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+
+                  <li>
+                    <b
+                      >Se vuole indichi nel seguente campo, utilizzando max 300
+                      caratteri, le sue considerazioni personali
+                      sull'insegnamento</b
+                    >
+
+                    <br />
+                    <br />
+
+                    <div class="domanda_risposte">
+                      <!-- Caso Booleano -->
+
+                      <!-- Risposta libera -->
+
+                      <textarea
+                        id="sezioni6.domande1.risposta"
+                        name="sezioni[6].domande[1].risposta"
+                        maxlength="500"
+                        rows="10"
+                        cols="30"
+                      ></textarea>
+
+                      <!-- Risposta multipla -->
+                    </div>
+
+                    <br />
+                    <br />
+                  </li>
+                </ol>
+              </fieldset>
+            </li>
+
+            <br />
+            <br />
+          </ol>
+
+          <div align="center">
+            <input
+              type="submit"
+              name="indietro"
+              class="button"
+              value="Indietro"
+            />
+            <input
+              type="submit"
+              name="continua"
+              class="button"
+              value="Continua"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
