@@ -20,6 +20,6 @@ This extension is a simple tool to help students, currently the supported featur
 
 ### Autofill the TV evaluation questionnaire
 1. Open the TV evaluation questionnaire
-2. On the right-bottom corner of the page you will find a button to start the autofill
-3. Click the button and wait for the extension to select the options
+2. Click the extension icon to open the popup
+3. Click the "Start autofill" button
 4. Submit the questionnaire and enjoy!
